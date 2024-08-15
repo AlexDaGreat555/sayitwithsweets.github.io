@@ -1,0 +1,364 @@
+:root{
+    --lavender: rgb(230, 230, 250);
+    --purple: rgb(218,179,255);
+    --pink: rgb(255, 179, 255);
+    --lightPink: rgb(255, 230, 255);
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--lavender);
+}
+h1, h2, h3, th, nav{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* All pages */
+
+#bodyContainer{
+    font-size: 100%;
+    max-width: 90%; margin: auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;  
+}
+
+header, body, html{
+    background-color: var(--purple);
+}
+
+#home_logo{
+    width: 10%;
+}
+
+#title_top{
+    align-self: center;
+    font-size: 3vw;
+}
+
+.logoTitle{
+    display: flex;
+}
+
+nav{
+    background-color: var(--purple);
+    padding: 3%;
+}
+
+.navA{
+    font-size: 2vw;
+    font-weight: bold;
+    text-decoration: None;
+    margin-right: 5%;
+    background-color: var(--purple);
+}
+
+.navA:hover{
+    background-color: var(--lightPink);
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+footer{
+    font-size: 1vw;
+    display: flex;
+    max-width: 90%; margin: auto;
+    align-items: center;
+}
+
+#pageTitle{
+    font-size: 2vw;
+}
+
+#foot{
+    margin-left: 1%;
+}
+
+#emailFooter{
+    margin-left: 2%;
+}
+
+/* Socials Div */
+.socials{
+    width: 17%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    clear: right;
+}
+
+.socials td{
+    font-size: 1vw;
+}
+
+#find_us{
+    font-size: 1.5vw;
+}
+
+
+.socialsLogo{
+    width: 100%;
+    height: 100%;
+    background-color: var(--lavender);
+}
+
+.socialsLogo:hover{
+    cursor: pointer;
+}
+
+.imgCol{
+    width: 25%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Home Objects Designs */
+#home_vid {
+background-color: var(--purple) ;
+display: inline-block;
+object-fit: fill;
+width: 100%;
+height: auto;
+}
+
+.homeObjects{
+    display: flex;
+}
+
+#home_welcome{
+    width: 35%;
+    font-size: 1.5vw;
+}
+
+#home_welcome p{
+    margin-left: 3%;
+}
+
+#home_image_links{
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 4%; margin-right: 4%;
+}
+
+#cupcake_img, #cookie_img, #cake_img, #offer_img{
+    width: 12vw;
+    height: 12vw;
+    margin-top: auto; margin-bottom: auto;
+    border-radius: 100%;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+}
+
+#cupcake_img:hover, #cookie_img:hover, #cake_img:hover, #offer_img:hover{
+    width: 13vw;
+    height: 13vw;
+    border: 8px solid var(--purple);
+    cursor: pointer;
+}
+
+
+
+/* Cupcake Page Object designs */
+
+/* Cupcake Description Div */
+#description{
+    display: flex;
+    margin-bottom: 2%;
+}
+
+#paragraph_description{
+    width: 35%;
+    font-size: 1.5vw;
+    margin-left: 2%;
+}
+
+/* Cupcake slides/carousel Div */
+#slides{
+    margin-left: 4%; margin-right: 4%;
+    width: 40%;
+    align-items: center;
+}
+
+#slides p{
+    font-size: 1.5vw;
+}
+
+.slideImages{
+    width: 100%;
+    height: 80vh;
+    object-fit: fill;
+}
+
+
+
+/* Tabs Div */
+#tab_section{
+    background-color: var(--lightPink);
+}
+
+#tabs{  /* Tab Navigation */
+    display: flex;
+    list-style: none;
+    background-color: var(--pink);
+    padding-top: 1%; padding-bottom: 1%;
+    margin-top: -0.20%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#tabs a{
+    margin-right: 2vh;
+    background-color: var(--pink);
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+#tabs li{
+    background-color: var(--pink);
+}
+
+.tab_nav{
+    margin-left: 1%; margin-right: 2%;
+}
+
+.container{
+    background-color: var(--lightPink);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: -1%;
+    margin: 2%;
+    padding-bottom: 5%;
+}
+
+.container img{
+
+    background-color: var(--lightPink);
+    width: 100%;
+    height: 40vh;
+}
+
+.tabPics{
+    width: 30%;
+    background-color: var(--lightPink);
+    margin-right: 2%; margin-bottom: 4%;
+}
+
+.tabText{
+    background-color: var(--lightPink);
+    font-size: 1vw;
+}
+
+.tab_price{
+    margin-top: -4%;
+    background-color: var(--lightPink);
+}
+
+.tab_description{
+    font-size: 1.5vw;
+    background-color: var(--lightPink);
+}
+
+
+
+/* Contact Page Designs */
+#contact_section{
+    display: flex;
+}
+
+#contact_P{
+    width: 35%;
+    font-size: 1.5vw;
+    margin: 2%;
+}
+
+#google_map_API{
+    width: 40%;
+    margin-left: 4%; margin-right: 4%;
+    font-size: 1.5vw;
+}
+
+#map{
+    margin-top: -5%;
+    width: 100%;
+    height: 80%;
+}
+
+
+#mailing_section{
+    width: 90%;
+    margin-left: 2%;
+    font-size: 1.5vw;
+    padding-bottom: 1%;
+}
+
+.inputBox{
+    width: 12%;
+    height: 1vw
+}
+
+.inputCheckBox{
+    transform: scale(1.5);
+}
+
+.checkBoxText{
+    margin-left: 0.5%;
+}
+
+.inputSubmit{
+    width: 10%;
+    height: 2vw;
+    background-color: var(--purple);
+    font-size: 1vw;
+}
+
+/* About Page style design */
+
+#about_section{
+    display: flex;
+
+}
+
+#about_para{
+    width: 35%;
+    font-size: 1.5vw;
+    margin: auto;
+}
+
+#about_logo{
+    width: 45%;
+}
+
+#petEmbed{
+    margin-left: 2%;
+}
+
+#facebookEmbed{
+    width: 50%;
+    height: 50vw;
+}
+
+/* Offer Item/designs */
+
+#offers{
+    margin-left: 4%; margin-right: 4%;
+    width: 40%;
+}
+
+
+#coupon_img1, #coupon_img2{
+    width: 100%;
+    height: 25vw;
+}
+
+#coupons{
+    font-size: 1.5vw;
+}

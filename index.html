@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script defer src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Alexander Torres Vivaldo">
+    <meta keywords="Say It With Sweets">
+    <meta description="Alex's website for Say It With Sweets">
+    <title>Alexander Torres Vivaldo's Say It With Sweets</title>
+</head>
+<body>
+    <div id="bodyContainer">
+    <header>
+        <!-- slide reference from stackoverflow: https://stackoverflow.com/questions/11645081/how-to-build-simple-tabs-with-jquery -->
+        <!-- images throughout website were courtesy of Say It With Sweets website, and social media (links are below)  -->
+        <!-- Opening new Tab from clicking events reference: https://stackoverflow.com/questions/4907843/open-a-url-in-a-new-tab-and-not-a-new-window -->
+        <!-- JQuery Tabs refernce: https://stackoverflow.com/questions/11645081/how-to-build-simple-tabs-with-jquery -->
+        <div class="logoTitle">
+        <img id="home_logo" src="static/additional/logo.png" alt="Say It With Sweets Logo">
+        <h1 id="title_top">Say It With Sweets</h1>
+        </div>
+
+        <nav>
+        <a id="indexTab" class="navA" href="index.html"> Home </a>
+        <a id="contactTab" class="navA" href="views/contact.html"> Contact </a>
+        <a id="cupcakeTab" class="navA" href="views/cupcakes.html"> Cupcakes </a>
+        <a id="cookieTab" class="navA" href="views/cookies.html"> Cookies </a>
+        <a id="cakeTab" class="navA" href="views/cakes.html"> Cakes </a>
+        <a id="aboutTab" class="navA" href="views/about.html"> About </a>
+        <a id="offerTab" class="navA" href="views/coupons.html"> Offers </a>
+        </nav>
+        
+    </header>
+    <div class="main">
+        <video id="home_vid" height="500" autoplay muted loop> 
+        <source src="static/additional/home_vid.mp4" type="video/mp4">
+        </video>
+        <h2 id="pageTitle" class="center">Say It With Sweets</h2>
+
+        <div class="homeObjects">
+            <div id="home_welcome">
+                <p>"Sweet" gifts for everyone or for your special celebration. We have you covered: cakes, cupcakes, cookies.
+                    <br>
+                    <br>
+                    Custom made cookies and cupcakes must be ordered at least 7 working days in advance.
+                    Regular and gourmet cupcakes at least 1-2 working days in advance. Cookie cakes and cookie trays - at least 5 working days in advance.
+                    <br>
+                    <br>
+                    note: please order as early as possible. during very busy weeks we may not be able to accommodate you.
+                </p>
+            </div>
+            <div id="home_image_links">
+                <div id="cupcake"> 
+                    <img id="cupcake_img" src="static/cupcake files/celebration_ck/blue_white_ck.jpg" alt="clickable cupcake image" onclick="cupcakeRedirect()">
+                </div>
+                <div id="cookie">
+                    <img id="cookie_img" src="static/cookie files/cookie_trays/christmas_cookie_tray.jpg" alt="clickable cookie image" onclick="cookieRedirect()">
+                </div>
+                <div id="cake">
+                    <img id="cake_img" src="static/cake files/anniversary|wedding/50_anniversary.jpg" alt="clickable cake image" onclick="cakeRedirect()">
+                </div>
+                <div id="offer">
+                    <img id="offer_img" src="static/additional/offer_logo.jpeg" alt="clickable offer image" onclick="offerRedirect()">
+                </div>
+            </div>
+
+            <div class="socials">
+                <table>
+                    <tr><th colspan="2" id="find_us">Socials</th></tr>
+                    <tr><td class="imgCol"><img class="socialsLogo" src="static/additional/insta_logo.jpeg" alt="instagram logo" onclick="OpenInNewTabWinBrowser('https://www.instagram.com/sayitwithsweets11?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==')" target="_blank"></td>
+                        <td><a href="https://www.instagram.com/sayitwithsweets11?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@sayitwithsweets11</a></td></tr>
+                    <tr><td class="imgCol"><img class="socialsLogo" src="static/additional/facebook_logo.jpeg" alt="facebook logo" onclick="OpenInNewTabWinBrowser('https://www.facebook.com/say.it.with.sweets/')"></td>
+                        <td><a href="https://www.facebook.com/say.it.with.sweets/" target="_blank">@say It With Sweets</a></td>
+                    </tr>
+                    <tr><td class="imgCol"><img class="socialsLogo" src="static/additional/yelp_logo.png" alt="yelp logo" onclick="OpenInNewTabWinBrowser('https://www.yelp.com/biz/say-it-with-sweets-altoona?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)')"></td>
+                        <td><a href="https://www.yelp.com/biz/say-it-with-sweets-altoona?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">@say It With Sweets</a></td>
+                    </tr>
+                    <tr><td class="imgCol"><img class="socialsLogo" src="static/additional/tripadvisor_logo.png" alt="tripadvisor logo" onclick="OpenInNewTabWinBrowser('https://www.tripadvisor.com/Restaurant_Review-g30034-d5017286-Reviews-Say_IT_With_Sweets-Altoona_Pennsylvania.html')"></td>
+                        <td><a href="https://www.tripadvisor.com/Restaurant_Review-g30034-d5017286-Reviews-Say_IT_With_Sweets-Altoona_Pennsylvania.html" target="_blank">@say It With Sweets</a></td>
+                    </tr>
+                </table> 
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<footer>
+    <p id="foot">Say It With Sweets &copy; 2024 </p>
+    <a id="emailFooter" href="mailto:info@sayitwithsweets.com" target="_blank">info@sayitwithsweets.com</a>
+</footer>
+</html>

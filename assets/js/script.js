@@ -2,19 +2,19 @@ var slideWindow = window.location.href;
 
 // Redirct Images at Index
 function cupcakeRedirect(){
-  location.replace("cupcakes.html")
+  location.replace("views/cupcakes.html")
 }
 
 function cookieRedirect(){
-  location.replace("cookies.html")
+  location.replace("views/cookies.html")
 }
 
 function cakeRedirect(){
-  location.replace("cakes.html")
+  location.replace("views/cakes.html")
 }
 
 function offerRedirect(){
-  location.replace("coupons.html")
+  location.replace("views/coupons.html")
 }
 
 // Socials Redirect
